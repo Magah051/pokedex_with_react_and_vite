@@ -1,27 +1,38 @@
-# React + TypeScript + Vite
+# Pokédex React App
+Este é um projeto de Pokédex desenvolvido em React, Vite e TypeScript, integrado com a PokeAPI. A Pokédex é uma ferramenta essencial no universo Pokémon, usada pelos treinadores para registrar e obter informações sobre diferentes espécies de Pokémon.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### O que é uma Pokédex?
+Uma Pokédex é um dispositivo eletrônico no mundo Pokémon que serve como uma enciclopédia portátil. Desenvolvida pela fictícia empresa Silph Co., a Pokédex é usada por treinadores Pokémon para registrar informações sobre diferentes espécies de Pokémon encontradas durante suas jornadas. Ela fornece dados como tipos, habilidades, evoluções e outros detalhes relevantes sobre cada Pokémon.
 
-Currently, two official plugins are available:
+### Recursos da Aplicação
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+### Configuração do Projeto
+Certifique-se de ter o Node.js instalado antes de prosseguir.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Clone o repositório:
+`git clone https://github.com/Magah051/pokedex_with_react_and_vite.git`
+Instale as dependências:
 
-- Configure the top-level `parserOptions` property like this:
+`npm install`
+Execute o aplicativo:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+`npm run dev`
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+O aplicativo estará disponível em http://localhost:5173.
+
+### Tecnologias Utilizadas
+
+- React
+- Vite
+- TypeScript
+- 
+### API Utilizada
+- PokeAPI
+
+### Interface da Aplicação
+
+
+
+### Contribuições
+Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas (issues) ou enviar pull requests para melhorar este projeto.

@@ -4,15 +4,22 @@ import { useInfoOption } from "../../providers/InfoOptionProvider"
 import { BiUpArrow, BiDownArrow, BiRightArrow } from "react-icons/bi"
 
 export function SecondaryOptionsButtons() {
-
     const { setOption } = useInfoOption()
-    return <>
+
+    // Adicione as propriedades selectedOption e isDisable aos objetos Button
+    const commonButtonProps = {
+        selectedOption: [1, 2, 3], // Substitua pelo valor correto
+        isDisable: false, // Substitua pelo valor correto
+    }
+
+    return (
         <Container>
-            <Button shape="arrow-up" keyName="ArrowUp" keyLabel={<BiUpArrow />} functionHandler={() => setOption(0)} />
-            <Button shape="square" keyName="ArrowRight" keyLabel={<BiRightArrow />} functionHandler={() => setOption(2)} />
-            <Button shape="arrow-down" keyName="ArrowDown" keyLabel={<BiDownArrow />} functionHandler={() => setOption(3)} />
+            {/* Adicione as propriedades aos objetos Button */}
+            <Button shape="arrow-up" keyName="ArrowUp" keyLabel={<BiUpArrow />} functionHandler={() => setOption(0)} {...commonButtonProps} />
+            <Button shape="square" keyName="ArrowRight" keyLabel={<BiRightArrow />} functionHandler={() => setOption(2)} {...commonButtonProps} />
+            <Button shape="arrow-down" keyName="ArrowDown" keyLabel={<BiDownArrow />} functionHandler={() => setOption(3)} {...commonButtonProps} />
         </Container>
-    </>
+    )
 }
 
 const Container = styled.div`
